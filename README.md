@@ -105,3 +105,37 @@ The proposed system extends beyond image classification into a **real-world smar
 This design enables **real-time monitoring**, **scalable deployment**, and **precision farming**.
 
 ---
+
+## 🔮 Future Work
+
+- Field-level IoT deployment and validation
+- Expansion to other crop species
+- Federated learning for privacy-preserving model updates
+- Automated actuation (smart irrigation, drone spraying)
+
+---
+
+## 🤝 Authors
+
+Hasibul Hasan Rupok
+> 🌐 hasibul-rupok.com
+
+and co-authors
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+You are free to:
+- Use the code for research, academic, and commercial purposes
+- Modify and adapt the code
+- Distribute and sublicense the code
+
+Under the following conditions:
+- Proper attribution must be given to the original authors
+- The license notice must be included in all copies or substantial portions of the software
+
+📄 See the [LICENSE](LICENSE) file for full license details.
+
