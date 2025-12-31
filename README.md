@@ -15,3 +15,93 @@ Custard apple (*Annona squamosa*) is highly susceptible to multiple fungal and p
 This project proposes a **hybrid deep learning architecture integrated with an IoT-enabled smart agriculture framework** to automatically detect custard apple diseases from fruit and leaf images. The system combines multiple pretrained CNN models with channel-wise attention and is designed to be deployable in **edge–cloud IoT environments**.
 
 ---
+
+## 🚀 Key Contributions
+
+- ✅ Hybrid CNN architecture combining:
+  - MobileNetV2  
+  - ResNet152V2  
+  - ConvNeXt-Tiny  
+- ✅ Squeeze-and-Excitation (SE) attention mechanism for feature recalibration  
+- ✅ Six-class disease classification with **99.15% accuracy**
+- ✅ IoT-enabled smart agriculture framework for real-time disease monitoring
+- ✅ Designed for edge devices (ESP32-CAM, Raspberry Pi) and cloud-based inference
+
+---
+
+## 🧠 Model Architecture
+
+The proposed model:
+1. Extracts features independently using three pretrained CNNs  
+2. Applies **SENet** modules for channel-wise attention  
+3. Concatenates features into a unified representation  
+4. Performs final classification using a fully connected network  
+
+This stacked architecture improves robustness and generalization compared to single-model approaches.
+
+---
+
+## 🦠 Disease Classes
+
+The system classifies the following **six custard apple diseases**:
+
+1. Anthracnose  
+2. Black Canker  
+3. Diplodia Rot  
+4. Cylindrocladium Leaf Spot (Fruit)  
+5. Cylindrocladium Leaf Spot (Leaf)  
+6. Mealy Bug  
+
+---
+
+## 📊 Dataset
+
+- **Source:** Publicly available dataset collected from Nimgaon-Bhogi, Pune, India  
+- **Total images:** 8,226  
+- **Image type:** JPG (resized to 1024 × 768)  
+- **Data includes:** Fruit and leaf images under real-world conditions  
+
+📌 Dataset reference:  
+*Thite et al., Data in Brief, 2024*
+
+---
+---
+
+## ⚙️ Training Details
+
+- **Loss function:** Categorical Cross-Entropy  
+- **Optimizer:** Adam  
+- **Learning rate:** 0.0001  
+- **Regularization:** Batch Normalization & Dropout  
+- **Evaluation metrics:** Accuracy, Precision, Recall, F1-score  
+
+---
+
+## 🧪 Results
+
+| Model | Accuracy |
+|------|---------|
+| VGG19 | 68% |
+| ResNet152V2 | 71% |
+| MobileNetV2 | 79% |
+| ConvNeXt-Tiny | 84% |
+| **Proposed Hybrid Model** | **99.15%** |
+
+The model achieved **precision, recall, and F1-score ≈ 0.99** across all disease classes.
+
+---
+
+## 🌐 IoT-Enabled Framework
+
+The proposed system extends beyond image classification into a **real-world smart agriculture solution**:
+
+### Architecture Layers
+
+- **Edge Layer:** ESP32-CAM / Raspberry Pi for image capture & lightweight inference  
+- **Communication Layer:** MQTT, LoRaWAN, or NB-IoT  
+- **Processing Layer:** Hybrid edge–cloud deep learning inference  
+- **Application Layer:** Mobile/Web dashboard for farmer alerts and recommendations  
+
+This design enables **real-time monitoring**, **scalable deployment**, and **precision farming**.
+
+---
