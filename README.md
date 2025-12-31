@@ -39,6 +39,10 @@ The proposed model:
 
 This stacked architecture improves robustness and generalization compared to single-model approaches.
 
+Below is the architecture diagram used in our proposed model:
+
+![Model Architecture](https://raw.githubusercontent.com/HasibulRupok/IoT-Integrated-Deep-Learning-Approach-for-Automated-Disease-Monitoring-in-Custard-Apple-Cultivation/main/architecture.png)
+
 ---
 
 ## 🦠 Disease Classes
